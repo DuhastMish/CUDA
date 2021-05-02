@@ -1,7 +1,6 @@
 ﻿#include "cuda_runtime.h"
 #include "device_launch_parameters.h"
 #include <stdio.h>
-#define BASE_TYPE float
 #define N 10
 
 __global__ void umn_transp(float* a, float* c) {
