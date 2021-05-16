@@ -52,11 +52,6 @@ public:
 private:
     void allocate(size_t size) {
         cudaError_t result = cudaMalloc((void**)&start_, size * sizeof(T));
-        if (result != cudaSuccess)
-        {
-            start_ = end_ = 0;
-            throw std::runtime_error("failed to allocate device memory");
-        }
         end_ = start_ + size;
     }
 
