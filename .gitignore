@@ -4,3 +4,9 @@
 *.ptx
 *.cubin
 *.fatbin
+**/.vs
+**/Debug
+**/Release
+**/*.vcxproj.user
+**/Build
+**/x64
